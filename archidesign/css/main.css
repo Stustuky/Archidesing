@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito&display=swap');
+* {
+    box-sizing:border-box;
+}
+html {
+    font-size:62.5%;
+}
+body {
+    font-size:1.6rem;
+    margin:0;
+    font-family: 'Nunito', sans-serif;
+    background-color: #EDEDED;
+}
+.container {
+    max-width: 1500px;
+    margin:auto;
+}
+h1, h2, h3, nav {
+    font-family: 'Fjalla One', sans-serif;
+}
+h2:before, h2:after {
+	content: "-";
+	padding: 0 1rem;
+	color: #CB8606;
+}
+/* ----------------------------------HEADER--------------------------------------------- */
+header, .footer {
+    background-color: #00748D;
+    background-image:url("../img/path.png");
+    background-repeat:  repeat-x;
+    background-position:bottom;
+    font-size: 20px;
+}
+header p, .footer p {
+    color:white;
+}
+header .container, .footer .container{
+    display:flex;
+    justify-content:space-between;
+    Flex-direction:row;
+    align-items:center;
+    padding:20px 25px 15px;
+}
+.text-right p {
+    display:inline-block;
+}
+header nav a{
+    text-decoration:none;
+    color:white;
+    padding:10px 20px;
+    margin:10px;
+}
+header nav a:hover, .footer nav a:hover {
+    color: #00748D;
+    background-color:white;
+}
+.footer nav a{
+    text-decoration:none;
+    color:white;
+    margin:0;
+    padding:10px 20px;
+    margin:10px;
+    font-size: 25px;
+}
+.footer{
+    margin-top:15px;
+}
+/* -----------------------------------Index Main------------------------------------------ */
+.background{
+    background-image: url(../img/bg-header.jpg);
+    background-position: center;
+    background-size: cover;
+    height:500px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.background h1{
+    background-color: #cb8606;
+    padding: 10px 15px;
+    color:white;
+    font-size: 30px;
+}
+.background p{
+    background-color: #fff;
+    color:#00748d;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+/* ---------------------------------Index section 1-------------------------------------------- */
+.prestations {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    align-items: center;
+}
+.prestations h2{
+    width: 100%;
+    color:#00748d;
+}
+.prestations article{
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    width:25%;
+}
+.prestations article p i{
+    font-size: 30px;
+    background-color: #cb8606;
+    color: white;
+    padding: 20px;
+}
+.prestations article a{
+    text-decoration: none;
+    background-color: #00748d;
+    color: #fff;
+    padding: 5px 50px;
+}
+/* ---------------------------------Index section 2-------------------------------------------- */
+.prestataires{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    align-items: center;
+}
+.prestataires h2{
+    width: 100%;
+    color:#00748d;
+}
+.prestataires div{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.prestataires div img{
+    border: 5px solid #00748d;
+    width: 20%;
+}
+/* ----------------------------------Actualité main --------------------------------------- */
+.actu{
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+}
+.actu h2{
+    font-size:25px;
+    color: #00748D;
+}
+.actu h1:before, .actu h1:after, .real h1:before, .real h1:after {
+	content:" - ";
+	color: #00748D;
+}
+/* ---------------------------- Actualité section ---------------------------------------- */
+.actu section{
+	display:flex;
+	flex-direction: column;
+}
+.actu h1, .real h1 {
+    font-size:30px;
+    color: #CB8606;
+	text-align: center;
+	margin: 3rem 0 5rem 0;
+	text-transform: uppercase;
+}
+.actu article {
+	width: 100%;
+	text-align: left;
+	margin-bottom: 170px;
+}
+.actu article h2{
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.actu img {
+    float: left;
+	width: 40%;
+	padding-right: 2rem;
+}
+.actu a {
+    text-decoration:none;
+    color: white;
+	display: inline-block;
+	padding: 1rem;
+	background-color: #00748D;
+}
+/* --------------------------------- Actualité aside ----------------------------------- */
+aside {
+	width: 24%;
+	font-size: 16px;
+	margin-left: 2rem;
+}
+.temoin, .tweet {
+	margin: 5rem 0;
+	padding: 0rem 3rem;
+}
+.tweet h2{
+    margin-bottom: 5rem;
+}
+.temoin h2{
+    margin: 6rem 0 3rem;
+}
+/* -------------------------------------------------------------------------------- */
+blockquote {
+	margin: 3rem 0;
+}
+q {
+	display: flex;
+	text-align:left;
+}
+q:before {
+	content: url(../img/actu/quote.png);
+	margin-right: 1rem;
+}
+cite {
+	display: flex;
+	align-items: center;
+	margin-top: 1rem;
+	color: #00748D;
+	font-size: 14px;
+	font-weight: bold;
+}
+cite:before {
+	content: url(../img/actu/client.png);
+	margin-right: 1.5rem;
+}
+hr {
+	border: 0.2rem solid #CB8606;
+	margin: 0 10rem;
+}
+.scroll {
+	height: 500px;
+	overflow: auto;
+	padding-right: 1rem;
+}
+
+/* ------------------------------------------------------------------------------ */
+.tweet {
+	padding: 2rem;
+}
+.tweet ul{
+    padding:0;
+}
+.tweet li {
+	margin: 2rem 1rem;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.tweet li::before {
+	content: url(../img/actu/circle.png);
+	margin-right: 1rem;
+}
+/* --------------------------------- Réalisation main --------------------------------------- */
+.real {
+	display: flex;
+	justify-content: center;
+}
+.real h1{
+    margin-bottom: 5rem;
+}
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+	gap: 1rem;
+}
+.portrait {
+	grid-row: span 2;
+}
+.gallery img {
+	align-self: stretch;
+	justify-self: stretch;
+	object-fit: cover;
+	border: #00748D 3px solid;
+	max-width: 100%;
+}
+/* --------------------------------- FOOTER -------------------------------------------- */
+footer{
+    background-color: #444;
+    text-align: center;
+    color: white;
+}
+footer img{
+    margin-top: 25px;
+    font-size: 20%;
+}
